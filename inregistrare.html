@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="media.css">
+<link rel="shortcut icon" type="image/png" href="Poze/icon.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Tenis Club Idu</title>
+
+</head>
+
+<div class="header"></div>
+
+<body>
+
+<ul id="nav">
+
+<a href="index.html">
+	<img src="Poze/icon1.jpg" id="icon"/>
+</a>
+
+<li><a href="index.html">Acasa</a></li>
+
+<div class="dropdown">
+  <a>Sportivi</a>
+  <div class="dropdown-content">
+    <a href="Halep.html">Simona Halep</a>
+    <a href="Boitan.html">Adrian Boitan</a>
+    <a href="Edris.html">Edris Fetisleam</a>  
+  </div>
+
+</div>
+
+<li><a href="evenimente.html">Evenimente</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+	<li><a href="inregistrare.html">Inregistrare</a></li>
+
+</ul>
+			<div id="content-box1">
+
+				<ul class="">
+						
+
+				</ul>
+
+				<h2>Inregistrare</h2>
+				<br>
+				<div class="container" id="cont">
+								<label for="fname" >Nume</label>
+								<input type="text" id="numeUser">
+								<br>
+								<div id="checknume"></div>
+
+								<label for="lname" >Prenume</label>
+								<input type="text" id="prenumeUser">
+								<br>
+								<div id="checkprenume"></div>
+
+
+								<label for="email">Email</label>
+								<input type="email" style="width: 100%" id="email">
+								<br>
+								<div id="checkemail"></div>
+
+								<label for="parola">Parola</label>
+								<input type="password" style="width: 100%" id="parola">
+									<br>
+								<div id="checkparola"></div>
+								<div id="checkparola2"></div>
+								<br>
+
+								Gen:
+								<input type="radio" id="gender" value="Barbat">Barbat
+								<input type="radio" id="gender" value="Femeie">Femeie
+								<div id="checkgen"></div>
+								<br>
+								<label>Varsta</label>
+								<input type="range" style="width: 100%" id="rangeinput"  min="14" max="80"
+									oninput="document.getElementById('rangeinp').innerHTML = this.value" />
+								<label id="rangeinp"></label>
+								<br>
+
+								  <label for="optiuni">Nivelul de joc</label>
+								  <select id="exampleFormControlSelect1">
+									  <option disabled selected value> -- alege o optiune -- </option>
+									  <option>Incepator</option>
+									  <option>Mediu</option>
+									  <option>Avansat</option>
+									  <option>Profesionist</option>
+
+
+								  </select>
+								<div id="checknivel"></div>
+
+								<div class="form-check">
+								  <input type="checkbox" value="" id="defaultCheck1" onclick="check()">
+								  <label for="defaultCheck1">
+									Verifica-ma
+								  </label>
+								</div>
+								  <input type="submit" value="Inregistrare" id="submit" >
+					</div>
+				</ul>
+			<br>
+
+</div>
+<script type="text/javascript" src="fisier.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script type="text/javascript" src="fisier2.js"></script>
+<script type="text/javascript" src="checkbox.js"></script>
+
+
+
+</body>
+
+</html>

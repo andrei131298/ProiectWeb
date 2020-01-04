@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "nume": "Alexandrescu",
+      "prenume": "Andrei",
+      "email": "andrei@yahoo.com",
+      "parola": "Andrei13",
+      "gen": "masculin",
+      "varsta": "21",
+      "nivel": "Avansat"
+    },
+    {
+      "nume": "Palosi",
+      "prenume": "Stefan",
+      "email": "stefan@yahoo.com",
+      "parola": "Stefan1",
+      "gen": "masculin",
+      "varsta": "19",
+      "nivel": "Profesionist"
+    },
+    {
+      "nume": "Stan",
+      "prenume": "Florin",
+      "email": "florin@yahoo.com",
+      "parola": "Florin99",
+      "gen": "masculin",
+      "varsta": "20",
+      "nivel": "Incepator"
+    }
+  ]
+}

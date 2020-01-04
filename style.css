@@ -1,0 +1,194 @@
+.header {
+  height: 300px;
+  background-image: url('teren2.jpg');
+  background-size: 2000px 400px;
+}
+
+body{
+	margin:0 auto; 
+	font-family:Calibri, sans-serif;
+	}
+
+body {
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#nav{
+	background-color:black;
+	border:2px solid #ccc;
+	border-width:2px 0;
+	margin:0;
+	padding-bottom:50px;
+	text-align:center;
+	font-size: 30px;
+}
+
+#nav li{
+	display:inline;
+}
+
+#nav img{
+	height:100px;
+	width:220px;
+}
+
+#nav a{
+	display:inline-block;
+	padding:10px;
+}
+
+a{
+	color:#ce8517;
+	text-decoration:none;
+	font-weight:bold;
+	}
+
+a:hover{
+	text-decoration:underline;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width:100%;
+  font-size:85%;
+}
+
+.dropdown-content a {
+  color: #ce8517;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#content h1{
+	font-size:280%;
+}
+
+#content p{
+	font-size: 150%;
+	padding-right:150px;
+	padding-left:150px;
+	padding-bottom:30px;
+}
+
+#content h1,p{
+	text-align:center;
+}
+
+#content-box1 {
+	text-align:center;
+	font-size: 140%;
+	margin: auto;
+	width: 60%;
+	border-style: solid;
+	border-width:10px;
+	border-color:#ce8517;
+	padding-right:20px;
+	padding-bottom:15px;
+}
+
+img.pic1{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+img.pic2{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	padding: 15px;
+}
+
+video{
+	width:60%;
+}
+
+#videoFed{
+	width:40%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: red;
+  color: white;
+}
+
+#content-box1 .contact{
+	padding:40px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#edris, #club, #halep, #boitan{
+	padding-left:25px;
+}
+
+#icon{
+	padding-top:20px;
+	padding-right:25px;
+}
+.contacte{
+	font-size:25px;
+}
+.jucatori:hover{
+	text-decoration:underline;
+}

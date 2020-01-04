@@ -1,0 +1,35 @@
+@media screen
+  and (max-width: 800px) {
+	#nav{
+		font-size:35px;
+		word-spacing: 9999999px;
+		padding-bottom:30px;
+		padding-right:25px;
+	}
+	video{
+		width:80%;
+	}
+	#content-box1 {
+	font-size: 130%;
+	margin: auto;
+	width: 90%;
+}
+	.header {
+   height: 200px;
+   background-size: 1000px 400px;
+}	
+	img.pic1{
+		width:90%;
+	}
+	video{
+		width:95%;
+		padding-left:15px;
+	}
+	img.pic2{
+		width: 90%;
+	}
+	#videoFed{
+		width:80%;
+	}
+	
+}
