@@ -1,4 +1,6 @@
 function check(){       //functia prin care verific cu checkboxul datele introduse
+    console.log(document.getElementById("gender").checked);
+    console.log(document.getElementById("feminin").checked);
     var valid=1;
     if(numeUser.value =='') {   //testul de null al numelui
         document.getElementById('checknume').style.color="red";
@@ -73,7 +75,7 @@ function check(){       //functia prin care verific cu checkboxul datele introdu
             valid=0;
         }
     }
-    if(document.getElementById("gender").checked == false){     //verifica daca sexul a fost selectat
+    if(document.getElementById("gender").checked == false && document.getElementById("feminin").checked == false){     //verifica daca sexul a fost selectat
         document.getElementById('checkgen').style.color="red";
         document.getElementById('checkgen').innerHTML="Gen neselectat";
         valid=0;

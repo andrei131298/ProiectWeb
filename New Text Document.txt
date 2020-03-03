@@ -1,0 +1,2 @@
+cd Desktop/Proiect Javascript
+json-server --watch db.json

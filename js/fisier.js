@@ -1,22 +1,5 @@
 var data = null;
 
-function arataVarstaInRange() {         //arata varsta selectata pe range input
-        var fP = document.getElementById('rangeinp').innerHTML;
-    }
-
-    var refreshIntervalId=setInterval(function () {     //creaza o culoare random pentru fundal
-        var randomColor = Math.floor(Math.random()*1677721).toString(16);
-        document.getElementById("cont").style.backgroundColor = "#"+randomColor;
-        },1000);       //schimba culoarea la fiecare secunda trecuta
-
-var btn = document.createElement("button");
-btn.innerHTML = "Vreau culoarea asta";
-document.getElementById("cont").appendChild(btn);
-btn.onclick=function(){     //la apasarea butonului se opreste schimbarea culorii
-    clearInterval(refreshIntervalId);
-}
-
-
 //creez variabilele prin care sa iau valoarea inputurilior din formular
 var numeUser=document.getElementById("numeUser");
 var prenumeUser=document.getElementById("prenumeUser");
@@ -24,6 +7,7 @@ var email=document.getElementById("email");
 var parola=document.getElementById("parola");
 var varsta=document.getElementById("rangeinput");
 var gen = document.getElementById("gender");
+var feminin = document.getElementById("feminin");
 var nivel=document.getElementById("exampleFormControlSelect1");
 
 
@@ -142,7 +126,7 @@ buton.addEventListener("click",function() {
             return;
         }
 
-        if(document.getElementById("gender").checked == false){     //verifica daca sexul nu a fost selectat
+        if(document.getElementById("gender").checked == false && document.getElementById("feminin").checked == false){     //verifica daca sexul nu a fost selectat
             Swal.fire({
                 icon: 'error',
                 title: 'Gen',
@@ -174,20 +158,36 @@ buton.addEventListener("click",function() {
             }
         });
         if(valid == 0) {    //daca trece toate testele, il adauga la useri
-            var feed = {
-                "nume": numeUser.value,
-                "prenume": prenumeUser.value,
-                "email": email.value,
-                "parola": parola.value,
-                "gen": gen.value,
-                "varsta": varsta.value,
-                "nivel": nivel.value
-            };
+            if(document.getElementById("gender").checked == true) {
+                var feed = {
+                    "nume": numeUser.value,
+                    "prenume": prenumeUser.value,
+                    "email": email.value,
+                    "parola": parola.value,
+                    "gen": gen.value,
+                    "varsta": varsta.value,
+                    "nivel": nivel.value
+                };
+            }
+            else{
+                var feed = {
+                    "nume": numeUser.value,
+                    "prenume": prenumeUser.value,
+                    "email": email.value,
+                    "parola": parola.value,
+                    "gen": feminin.value,
+                    "varsta": varsta.value,
+                    "nivel": nivel.value
+                };
+            }
             data.push(feed);
             Swal.fire({
                 icon: 'success',
                 title: 'Inregistrare cu succes!'
             })
             console.log(data);
+            setTimeout(function () {
+                window.location.href = "index.html";
+            }, 8000);
         }
 });
